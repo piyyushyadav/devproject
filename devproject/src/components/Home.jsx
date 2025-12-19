@@ -20,6 +20,7 @@ const Home = ({ addToCart, cartCount }) => {
           <li><Link to="#shop" className="nav-link">Shop</Link></li>
           <li><Link to="#collections" className="nav-link">Collections</Link></li>
           <li><Link to="#about" className="nav-link">About</Link></li>
+          <li><Link to="/login" className="nav-link">Login</Link></li>
         </ul>
         <Link to="/cart" className="cart-icon" style={{ textDecoration: 'none', color: 'inherit' }}>
           🛒

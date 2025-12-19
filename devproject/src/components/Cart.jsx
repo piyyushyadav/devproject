@@ -15,6 +15,7 @@ const Cart = ({ cartItems, removeFromCart }) => {
                 <ul className="nav-links">
                     <li><Link to="/" className="nav-link">Home</Link></li>
                     <li><Link to="/" className="nav-link">Shop</Link></li>
+                    <li><Link to="/login" className="nav-link">Login</Link></li>
                 </ul>
                 <div className="cart-icon">
                     🛒 <span className="cart-badge">{cartItems.length}</span>
