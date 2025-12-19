@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Navbar from './Navbar';
 import './Home.css'; // Reusing Home styles for consistency
 
 const Cart = ({ cartItems, removeFromCart }) => {
@@ -10,17 +11,7 @@ const Cart = ({ cartItems, removeFromCart }) => {
 
     return (
         <div className="home-container">
-            <nav className="navbar">
-                <Link to="/" className="nav-logo">LuxeShop.</Link>
-                <ul className="nav-links">
-                    <li><Link to="/" className="nav-link">Home</Link></li>
-                    <li><Link to="/" className="nav-link">Shop</Link></li>
-                    <li><Link to="/login" className="nav-link">Login</Link></li>
-                </ul>
-                <div className="cart-icon">
-                    🛒 <span className="cart-badge">{cartItems.length}</span>
-                </div>
-            </nav>
+            <Navbar cartCount={cartItems.length} />
 
             <div className="featured" style={{ paddingTop: '2rem' }}>
                 <h2 className="section-title">Your Shopping Cart</h2>

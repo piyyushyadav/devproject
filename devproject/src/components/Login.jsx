@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import Navbar from './Navbar';
 import './Home.css';
 
 const Login = () => {
@@ -17,13 +18,7 @@ const Login = () => {
 
     return (
         <div className="home-container">
-            <nav className="navbar">
-                <Link to="/" className="nav-logo">LuxeShop.</Link>
-                <ul className="nav-links">
-                    <li><Link to="/" className="nav-link">Home</Link></li>
-                    <li><Link to="/" className="nav-link">Shop</Link></li>
-                </ul>
-            </nav>
+            <Navbar />
 
             <div className="login-container">
                 <div className="login-card">

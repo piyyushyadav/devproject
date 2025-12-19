@@ -3,6 +3,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
 import Cart from './components/Cart';
 import Login from './components/Login';
+import Shop from './components/Shop';
+import Collections from './components/Collections';
+import About from './components/About';
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
@@ -23,6 +26,18 @@ function App() {
         <Route
           path="/"
           element={<Home addToCart={addToCart} cartCount={cartItems.length} />}
+        />
+        <Route
+          path="/shop"
+          element={<Shop addToCart={addToCart} cartCount={cartItems.length} />}
+        />
+        <Route
+          path="/collections"
+          element={<Collections cartCount={cartItems.length} />}
+        />
+        <Route
+          path="/about"
+          element={<About cartCount={cartItems.length} />}
         />
         <Route
           path="/cart"
